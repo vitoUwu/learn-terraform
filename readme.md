@@ -6,4 +6,4 @@
 
 ### Sources
 
-(Fernanda Kipper)[https://www.youtube.com/watch?v=BslJdgv_I2c]
+[Fernanda Kipper](https://www.youtube.com/watch?v=BslJdgv_I2c)
