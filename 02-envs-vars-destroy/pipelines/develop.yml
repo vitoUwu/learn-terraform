@@ -1,0 +1,21 @@
+name: Develop Pipeline
+
+on:
+  push:
+    branches:
+      - develop
+
+# Essas permissões são necessárias para a pipeline rodar corretamente, seguindo a documentação da AWS.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform:
+    uses: ./.github/workflows/terraform.yml
+    with:
+      environment: dev
+      aws-assume-role-arn: ""
+      aws-state-file-s3-bucket: ""
+      aws-lock-dynamodb-table: ""
+      aws-region: "us-east-1"
